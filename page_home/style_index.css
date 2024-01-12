@@ -13,7 +13,7 @@
 .header {
     font-size: large;
     position: relative;
-    margin: 10% 10%;
+    margin: 15%;
     color: #05a079; /* Turquoise color for text */
     text-align: center;
     padding: 20px;
@@ -65,12 +65,13 @@
 
   .slideshow-container {
     max-width: 800px; /* Set the maximum width of the slideshow */
+    max-height: 1000px; /* Set the maximum width of the slideshow */
     margin: auto; /* Center the slideshow */
 }
 
 .mySlides {
     display: none;
-    max-width: 70%; /* Make images responsive within the slideshow */
+    max-width: 80%; /* Make images responsive within the slideshow */
     height: auto;
     margin: auto; /* Center the images within the container */
 }

@@ -52,12 +52,16 @@
         var slideInterval = setInterval(function(){
             plusSlides(1);
         }, 5000);
+
+        window.onload = function() {
+        plusSlides(1);
+        };
     </script>
 
     <div class="navbar">
         <a href="index.html">HOME</a>
         <a href="about_us.html">ABOUT US</a>
-        <a href="contact.html">CONTACT</a>
+        <a href="../page_contact/contact.html">CONTACT</a>
         <a href="Store.html">STORE</a>
         <a href="index.html" class="logo"><img src="../images/logo.jpg" alt="Logo"></a>
     </div>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styleContact.css">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <h1> Contact </h1>
+    </header>
+
+    <section class="contact-form">
+        <h2> Get in Touch </h2>
+        <form>
+            <label for="name"> Your Name: </label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email"> Your Email: </label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="message"> Your Message: </label>
+            <textarea name="message" id="message" rows="4" required></textarea>
+
+            <button type="button" onclick="submitForm()"> Send Message</button>
+        </form>
+    </section>
+
+    <section id="cintact-info">
+        <h2>Contact Information</h2>
+        <p>Email: support@example.com</p>
+        <p>Phone: +972 529999999</p>
+    </section>
+
+    <script src="./contact.js"></script>
+</body>
+</html>
