@@ -1,0 +1,128 @@
+body {
+   
+  background-image: url("images\\background_green.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;}
+  .navbar {
+    position: fixed;
+    text-align: center;
+    overflow: hidden;
+    background-color: #04AA6D;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    height: 80px;
+  }
+  .navbar a {
+    align-items: center;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+  }
+
+  
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+  .front{
+    /*background-color: cornsilk;*/
+    width: 70%;
+    top:50px;
+    position: relative;
+    margin: 0 auto;
+    background-image: url(images/contact.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-filter: opacity(0.7);
+    filter: opacity(0.7);
+  }
+
+ .content{
+    height: 100%;
+    width: 70%;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 0;
+    padding-bottom: 100px;
+    background-color: transparent;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri;
+    font-size: 1.5vw;
+    bottom: 50px;
+ }
+
+ .grid-container {
+    display: grid;
+    grid-template-rows: 60px;
+    justify-content: center; 
+    grid-template-columns: repeat(5, auto);
+    gap:  20px;
+    align-items: center;
+    justify-content:center;
+
+  }
+
+  .grid-container > div{
+    text-align: center;
+    margin: 30px;
+  }
+
+  
+
+  h1{
+    text-align: center;
+    font-size: 4vw;
+  }
+
+  h2{
+    border-bottom: 3px solid rgb(29, 223, 107) ;
+  }
+
+  input{
+    padding: 7px;
+    margin: 5px;
+  }
+
+  textarea{
+    margin: 5px;
+    
+  }
+
+  label{
+    margin: 5px;
+    
+  }
+
+  input[type=submit]{
+    width: 100%;
+    height: 40px;
+    font-size: 1.5vw;
+    text-align: center;
+    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:rgb(13, 224, 129);
+    border-radius: 5px;
+    border: 1px outset;
+    bottom: 50px;
+    border-radius: 12px;
+    
+  }
+
+ 
+   
+
+  .button:hover{
+    opacity: 0.3;
+  }
+  @media screen and (max-height: 450px) {
+    .front {padding-top: 15px;}
+    
+  }
