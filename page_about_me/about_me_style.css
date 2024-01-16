@@ -1,0 +1,132 @@
+/* Navbar styles */
+.navbar {
+    position: fixed;
+    text-align: center;
+    overflow: hidden;
+    background-color: #009688; /* Turquoise background */
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    height: 80px;
+}
+
+.navbar a {
+    align-items: center;
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #48d1cc; /* Lighter turquoise on hover */
+    color: black;
+}
+
+.navbar a.active {
+    background-color: #1de9b6; /* Vibrant turquoise for active state */
+    color: white;
+}
+
+/* Logo styles */
+.navbar a.logo {
+    padding: 0; /* Remove padding for the logo link */
+}
+
+.navbar img {
+    height: 60px; /* Set the desired height of the logo */
+    margin-top: 10px; /* Adjust the top margin for positioning */
+}
+
+
+/* Reset styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Background Text styles */
+.background_text {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.background_text h1 {
+    color: #009688;
+}
+
+/* Article styles */
+article {
+    margin-top: 20px;
+}
+
+article a {
+    color: #009688;
+}
+
+/* Section styles */
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    color: #009688;
+}
+
+section p {
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Grid Container styles */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.grid-item {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Video styles */
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Interests styles */
+#interests {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#interests h2 {
+    color: #009688;
+}
+
+#interests ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#interests li {
+    margin-bottom: 10px;
+}
