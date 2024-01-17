@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Store -Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navigation bar -->
+  <!-- Navigation bar -->
+<div class="navbar">
+  <a href="index.html">HOME</a>
+  <a href="../about_us_page/about_us.html">ABOUT US</a>
+  <img src="../images/logo.jpg" alt="Logo" class="logo">
+  <a href="../contant_page/contact.html">CONTACT</a>
+  <a href="../store_page/store.html">STORE</a>
+</div>
+
+
+  <!-- Header section -->
+  <div class="header">
+    <h1>THE MOVIE STORE</h1>
+  </div>
+
+  <!-- Slideshow container for images -->
+  <div class="slideshow-container">
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <!-- Slide 1 content -->
+      <div class="numbertext">1 / 4</div>
+      <img src="../images/famly_look.png" style="width:100%">
+      <!--<div class="text">Famly Watch Togther </div>-->
+    </div>
+
+    <div class="mySlides fade">
+      <!-- Slide 2 content -->
+      <div class="numbertext">2 / 4</div>
+      <img src="../images/famly_with_screen.png" style="width:100%">
+      <!--<div class="text">Famly Look To The Screen</div>-->
+    </div>
+
+    <div class="mySlides fade">
+      <!-- Slide 3 content -->
+      <div class="numbertext">3 / 4</div>
+      <img src="../images/look_alone.png" style="width:100%">
+      <!--<div class="text">Having a Fun Watch Alone</div>-->
+    </div>
+    
+    <div class="mySlides fade">
+      <!-- Slide 4 content -->
+      <div class="numbertext">4 / 4</div>
+      <img src="../images/screen.png" style="width:100%">
+      <!--<div class="text">Caption Four</div>-->
+    </div>
+
+    <!-- Next and previous buttons for slideshow -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- Dots/circles to navigate through slides -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+
+  <!-- JavaScript functions for slideshow -->
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+
+  <!-- Title section -->
+  <h4>ALL ABOUT US</h4>
+
+  <!-- Container for content -->
+  <div class="container">
+    <!-- First content item with a link to the store -->
+    <div class="flex-item"> 
+      <a href="../store_page/store.html">
+        <img src="../images/movie_home.jpeg" style="width:100%">
+        <div class="description">
+          <h4>Pick a Movie</h4>
+          <p>Get your popcorn ready and select a movie</p>
+        </div>
+      </a>
+    </div>
+    
+    <!-- Second content item with a link to about us -->
+    <div class="flex-item"> 
+      <a href="../about_us_page/about_us.html">
+        <img src="../images/logo.jpg" style="width:100%" >
+        <div class="description">
+          <h4>Ariel's Story</h4>  
+        </div>
+      </a> 
+    </div>
+  </div>
+</body>
+</html>

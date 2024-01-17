@@ -1,0 +1,183 @@
+/* Default styles for larger screens */
+body {
+  margin: 0; /* Remove default margin */
+  font-size: 16px; /* Set a default font size */
+}
+
+/* Media query for medium-sized screens */
+@media screen and (max-width: 1200px) {
+  .navbar {
+    font-size: 80%; /* Decrease font size for navigation links */
+  }
+  
+  .bg-top1 {
+    width: 100%; /* Make the top background image full width */
+  }
+  
+  .background_text {
+    margin-left: 10px; /* Adjust margin for the background text */
+    width: 100%;
+  }
+  
+  article {
+    width: 100%; /* Make the article full width */
+    padding: 0 20px; /* Adjust padding for the article */
+    font-size: 1.2em; /* Decrease font size for the article */
+  }
+  
+  .grid-container {
+    grid-template-columns: repeat(2, auto); /* Adjust grid columns for smaller screens */
+  }
+  
+  /* Add more adjustments as needed */
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 600px) {
+  .navbar {
+    font-size: 70%; /* Further decrease font size for navigation links */
+  }
+  
+  .background_text {
+    margin-left: 5px; /* Further adjust margin for the background text */
+  width: 100%;
+  }
+  
+  article {
+    font-size: 1em; /* Further decrease font size for the article */
+  }
+  
+  .grid-container {
+    grid-template-columns: repeat(1, auto); /* Adjust grid columns for very small screens */
+  }
+  
+  /* Add more adjustments as needed */
+}
+/* Apply box-sizing to all elements, making padding and border included in the element's total width and height */
+* {
+  box-sizing: border-box;
+}
+
+/* Styling for the navigation bar */
+.navbar {
+  position: fixed;
+  text-align: center;
+  overflow: hidden;
+  background-color: #05a079;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  height: 60px;
+  display: flex; /* Using flexbox for layout */
+  justify-content: space-around; /* Spacing out the navigation links */
+  align-items: center;
+}
+
+/* Styling for navigation links in the navbar */
+.navbar a {
+  color: #f2f2f2;
+  text-decoration: none;
+  padding: 20px; /* Adding padding for spacing */
+  margin-top: 10px; /* Adding top margin for spacing */
+}
+
+/* Hover effect for navigation links in the navbar */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Styling for the active navigation link in the navbar */
+.navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Styling for the logo */
+.logo {
+  display: block;
+  width: 8%;
+  margin: 4px; /* Adding margin for spacing */
+}
+
+/* Styling for the background text */
+.background_text {
+  height: 100%;
+  margin-left: 10%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+}
+
+/* Styling for the article */
+article {
+  background-color: transparent;
+  width: 700px;
+  font-family: cursive, Monospace, 'Oswald', sans-serif;
+  font-size: 1.5vw;
+  padding: 0 40px;
+  line-height: 1.5;
+  font-weight: lighter;
+  color: #000;
+}
+
+/* Styling for the first letter of a paragraph */
+p::first-letter {
+  color:  #05a079;
+  font-size: xx-large;
+}
+
+/* Styling for heading 1 */
+h1 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri;
+  font-size: 6vw;
+  padding: 0 40px;
+}
+
+/* Styling for the grid container */
+.grid-container {
+  display: grid;
+  justify-content: flex-start; 
+  grid-template-columns: repeat(5, auto);
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* Styling for grid container's child elements */
+.grid-container > div {
+  text-align: left;
+  margin: 30px;
+}
+
+/* Styling for the prices table */
+#prices {
+  font-family: cursive, Monospace, 'Oswald', sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Styling for prices table cells and headers */
+#prices td, #prices th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+/* Styling for even rows in the prices table */
+#prices tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Hover effect for rows in the prices table */
+#prices tr:hover {
+  background-color: #ddd;
+}
+
+/* Styling for prices table headers */
+#prices th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #05a079;
+  color: white;
+}

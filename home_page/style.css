@@ -1,0 +1,202 @@
+/* Resetting some default styles for better consistency across browsers */
+body, h1, h2, h3, h6 p, ul {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin: 10px; /* Adding margin for spacing */
+  padding: 20px; /* Adding padding for spacing */
+  color: black;
+  text-align: center;
+}
+
+/* Header styling */
+.header {
+  margin: 10px; /* Adding margin for spacing */
+  padding: 20px; /* Adding padding for spacing */
+  color: black;
+  text-align: center;
+}
+
+.header h2 {
+  margin-top: 60px; /* Adding top margin for spacing */
+}
+
+/* Navigation bar styling */
+.navbar {
+  position: fixed;
+  text-align: center;
+  overflow: hidden;
+  background-color: #05a079;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  height: 60px;
+  display: flex; /* Using flexbox for layout */
+  justify-content: space-around; /* Spacing out the navigation links */
+  align-items: center;
+}
+
+.navbar a {
+  color: #f2f2f2;
+  text-decoration: none;
+  padding: 20px; /* Adding padding for spacing */
+  margin-top: 10px; /* Adding top margin for spacing */
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.logo {
+  display: block;
+  width: 8%;
+  margin: 4px; /* Adding margin for spacing */
+}
+
+/* Slideshow container styling */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+/* Styling for slideshow navigation buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Styling for slideshow captions and numbering 
+.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+*/
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Styling for slideshow navigation dots */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Animation for slideshow fade effect */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Container and content styling */
+.container {
+  max-width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.container > div {
+  width: 40%;
+  box-sizing: border-box;
+  background-color: #f1f1f1;
+  border: 2px solid black;
+  margin: 30px; /* Adding margin for spacing */
+}
+
+/* Styling for content description */
+.description {
+  font-size: 25px;
+  padding: 10px;
+  text-align: center;
+  font-style: italic;
+  flex: 1;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container > div {
+    width: 80%;
+  }
+}
+
+/* Footer styling */
+/* Add your footer styles here */
+
+/* Additional styles for other sections */
+/* Add your styles for other sections as needed */
+
+/* General styling for links */
+a {
+  color: #05a079;
+  text-decoration: none;
+}
+
+/* Hover effect for links */
+a:hover {
+  text-decoration: underline;
+}
