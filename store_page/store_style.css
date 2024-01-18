@@ -32,6 +32,9 @@ body, html {
   .header{
     position: relative;
     top: 60px;
+    color:black;
+    background-color:white ;
+    margin:0 ;
   }
   
   .navbar {
@@ -189,6 +192,7 @@ body, html {
     
   }
   
+  
   h2{
     font-family: "Trirong", serif;
     font-weight: bold;
@@ -208,6 +212,7 @@ body, html {
     border: 1px black;
     
   }
+ 
 
   
   .flex-container{
@@ -244,6 +249,7 @@ body, html {
   .button:hover{
     opacity: 0.3;
   }
+ 
   
   
   

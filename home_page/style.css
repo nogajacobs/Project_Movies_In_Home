@@ -164,15 +164,8 @@ a {
 a:hover {
   text-decoration: underline;
 }
-.gallery {
-     
-  margin: auto;
-}
-.grid-container > div  {
-  background-image: url("../images/background_green.jpeg");
-  border-radius: 8px;
-  padding: 10px;
-}
+
+
 .flex-container >div {
 
 box-sizing: border-box;
@@ -182,6 +175,10 @@ padding: 40px;
 flex: 1;
 
 }
+h4{
+text-align: center;
+}
+
 
 .content button {
 background-color: #74a4bb;

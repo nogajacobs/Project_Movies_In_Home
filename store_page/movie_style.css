@@ -45,10 +45,7 @@
     width: 8%;
     margin: 4px; /* Adding margin for spacing */
   }
-  .gallery {
-   
-    margin: auto;
-  }
+  
   .grid-container{
    
     display: grid;
@@ -58,6 +55,7 @@
     grid-column-gap:  40px;
     grid-row-gap:  20px;
     justify-content:center;
+    margin-top: 5.45rem;
    
   }
   
@@ -95,8 +93,16 @@
     
   }
   
- 
+  .gallery {
+     
+    margin: auto;
+  }
 body, html {
 height: 100%;
 margin: 0;
+}
+h4{
+  padding: auto;
+  margin:auto;
+  text-align: center;
 }
