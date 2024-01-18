@@ -1,3 +1,17 @@
+body, html {
+  height: 100%;
+  margin-top: 25px;
+}
+.bg {
+  background-image: url("../images/movies_store.jpeg");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 50px;
+  background-attachment: fixed;
+  top: 20px;
+}
 .mySlides {
     display: none;
    
@@ -174,56 +188,6 @@
     flex: 1;
     
   }
-  
-  
-  
-    .gallery {
-     
-      margin: auto;
-    }
-    .grid-container{
-     
-      display: grid;
-      grid-template-columns: 12vw 12vw 12vw;
-      grid-auto-columns: minmax(100px,auto);
-      grid-auto-rows: 300px;
-      grid-column-gap:  40px;
-      grid-row-gap:  20px;
-      justify-content:center;
-     
-    }
-  
-    
-  
-  .overlay {
-    position:relative; 
-    bottom:100px;
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5); /* Black see-through */
-    color: #f1f1f1; 
-    width: 159px;
-    transition: .5s ease;
-    opacity:0;
-    color: white;
-    font-size: 1vw;
-    padding: 10px;
-    text-align: center;
-    line-height: 3px;
-  }
-  
-  
-  .grid-item:hover .overlay {
-    opacity: 1;
-  }
-  
-  .grid-container > div  {
-    background-image: url("imeges/children_cake/background.jpg");
-    border-radius: 8px;
-    padding: 10px;
-  }
-  
-  
-  
   
   h2{
     font-family: "Trirong", serif;
