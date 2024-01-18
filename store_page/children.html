@@ -6,95 +6,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>children</title>
     <link rel="stylesheet" href="movie_style.css">  
-
+    <link rel="stylesheet" href="../toolbar/navbar.css">  
+    
 </head>
 <body>
 
-    <div class="navbar">
-        <a href="../home_page/index.html">HOME</a>
-        <a href="../about_us_page/about_us.html">ABOUT US</a>
-        <img src="../images/logo.jpg" alt="Logo" class="logo">
-        <a href="../contant_page/contact.html">CONTACT</a>
-        <a href="../store_page/store.html">STORE</a>
-      </div>
+    <!-- Navigation bar -->
+    <script>
+        fetch('../Toolbar/navbar.html')
+          .then(response => response.text())
+          .then(data => {
+            document.body.insertAdjacentHTML('afterbegin', data);
+          });
+      </script>
 
+<script>
+    function openTrailer(url) {
+        window.open(url, '_blank');
+    }
+</script>
 
    <div class="bg-top"></div>
        
       
-    <div class="main">
-        <section class="gallery">
-    <!--all the items of this page-->
-        <div class="grid-container">
-            <div class="grid-item"> 
-                <img src="../images/Home Alone.jpg" style="width:100%">  
-                <div class="overlay">
-                    <h4>Home Alone</h4>
-                    <p>25$</p>
-                </div>  
+   <div class="main">
+    <script>
+        function openTrailer(url) {
+            window.open(url, '_blank');
+        }
+    </script>
+    <section class="gallery">
+<!--all the items of this page-->
+    <div class="grid-container">
+        <div class="grid-item" onclick="openTrailer('https://www.youtube.com/watch?v=jEDaVHmw7r4&ab_channel=RottenTomatoesClassicTrailers')"> 
+            <img src="../images/Home Alone.jpg" style="width:100%">  
+            <div class="overlay">
+                <h4>Home Alone</h4>
+                <p>25$</p>
+            </div>
+            <div>
+           
+            
                 
-            </div>
-            <div class="grid-item"> 
-                <img src="../images/The Lion King.jpg" style="width:100%">
-                <div class="overlay">
-                    <h4>The Lion King</h4>
-                    <p>22$</p>
-                </div>  
-              </div>
-            <div class="grid-item"> 
-                <img src="../images/Peter Pan.jpg" style="width:100%">
-                <div class="overlay">
-                    <h4>Peter Pan</h4>
-                    <p>29$</p>
-                </div>  
-               </div>
-            <div class="grid-item"> 
-                <img src="../images/Winnie The Pooh.jpg" style="width:100%">
-                <div class="overlay">
-                    <h4>Winnie The Pooh</h4>
-                    <p>31$</p>
-                </div>  
-              </div>
-            <div class="grid-item"> 
-                <img src="../images/Free Willy.jpg" style="width:100%">
-                <div class="overlay">
-                    <h4>Free Willy</h4>
-                    <p>24$</p>
-                </div>  
-              </div>
-            <div class="grid-item"> 
-                <img src="../images/Paddington.jpg" style="width:100%">
-                <div class="overlay">
-                    <h4>Paddington</h4>
-                    <p>30$</p>
-                </div>  
-            </div>
-            <div class="grid-item"> 
-                <img src="../images/Matilda.jpg" style="width:100%">
-                <div class="overlay">
-                    <h4>Matilda</h4>
-                    <p>25$</p>
-                </div>  
-             </div>
-             <div class="grid-item"> 
-                <img src="../images/Finding Nemo.jpg" style="width:100%">
-                <div class="overlay">
-                    <h4>Finding Nemo</h4>
-                    <p>22$</p>
-                </div>  
-             </div>
-             <div class="grid-item"> 
-                <img src="../images/pinocchio.jpg" style="width:100%">
-                <div class="overlay">
-                    <h4>pinocchio</h4>
-                    <p>28$</p>
-                </div>  
-             </div>
+            
+            </div>  
+            
+        </div>
+        <div class="grid-item" onclick="openTrailer('https://www.youtube.com/watch?v=7pTs8v-fFw0&ab_channel=Cinemaisrael')"> 
+            <img src="../images/The Lion King.jpg" style="width:100%">
+            <div class="overlay">
+                <h4>The Lion King</h4>
+                <p>22$</p>
+            </div>  
           </div>
-        
-        </section>
-        
-    </div>
+        <div class="grid-item"> 
+            <img src="../images/Peter Pan.jpg" style="width:100%">
+            <div class="overlay">
+                <h4>Peter Pan</h4>
+                <p>29$</p>
+            </div>  
+           </div>
+        <div class="grid-item"> 
+            <img src="../images/Winnie The Pooh.jpg" style="width:100%">
+            <div class="overlay">
+                <h4>Winnie The Pooh</h4>
+                <p>31$</p>
+            </div>  
+          </div>
+        <div class="grid-item"> 
+            <img src="../images/Free Willy.jpg" style="width:100%">
+            <div class="overlay">
+                <h4>Free Willy</h4>
+                <p>24$</p>
+            </div>  
+          </div>
+        <div class="grid-item"> 
+            <img src="../images/Paddington.jpg" style="width:100%">
+            <div class="overlay">
+                <h4>Paddington</h4>
+                <p>30$</p>
+            </div>  
+        </div>
+        <div class="grid-item"> 
+            <img src="../images/Matilda.jpg" style="width:100%">
+            <div class="overlay">
+                <h4>Matilda</h4>
+                <p>25$</p>
+            </div>  
+         </div>
+         <div class="grid-item"> 
+            <img src="../images/Finding Nemo.jpg" style="width:100%">
+            <div class="overlay">
+                <h4>Finding Nemo</h4>
+                <p>22$</p>
+            </div>  
+         </div>
+         <div class="grid-item"> 
+            <img src="../images/pinocchio.jpg" style="width:100%">
+            <div class="overlay">
+                <h4>pinocchio</h4>
+                <p>28$</p>
+            </div>  
+         </div>
+      </div>
+    
+    </section>
+    
+</div>
 
 </body>
 </html>

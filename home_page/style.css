@@ -4,29 +4,29 @@ h1, h2, h3, h6 p, ul {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 30px;
-  margin: 10px; /* Adding margin for spacing */
-  padding: 20px; /* Adding padding for spacing */
+  font-size: 1.875rem; /* 30px / 16px = 1.875rem */
+  margin: 0.625rem; /* 10px / 16px = 0.625rem */
+  padding: 1.25rem; /* 20px / 16px = 1.25rem */
   color: black;
   text-align: center;
 }
 
 /* Header styling */
 .header {
-  margin: 10px; /* Adding margin for spacing */
-  padding: 20px; /* Adding padding for spacing */
+  margin: 0.625rem; /* 10px / 16px = 0.625rem */
+  padding: 1.25rem; /* 20px / 16px = 1.25rem */ /* Adding padding for spacing */
   color: black;
   text-align: center;
 }
 
 .header h1 {
-  margin-top: 60px; /* Adding top margin for spacing */
-  font-size: 40px;
+  margin-top: 3.75rem; /* 60px / 16px = 3.75rem */
+ font-size: 2.5rem; /* 40px / 16px = 2.5rem */
 }
 
 /* Slideshow container styling */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 62.5rem; 
   position: relative;
   margin: auto;
 }
@@ -41,13 +41,13 @@ h1, h2, h3, h6 p, ul {
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -22px;
-  padding: 16px;
+  margin-top: -1.375rem; /* -22px / 16px = -1.375rem */
+  padding: 1rem;
   color: white;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.125rem;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  border-radius: 0 0.1875rem 0.1875rem 0;
   user-select: none;
 }
 
@@ -57,7 +57,7 @@ h1, h2, h3, h6 p, ul {
 
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
+  border-radius: 0.1875rem 0 0 0.1875rem;
 }
 
 .prev:hover, .next:hover {
@@ -78,8 +78,8 @@ h1, h2, h3, h6 p, ul {
 
 .numbertext {
   color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
+  font-size: 0.75rem; /* 12px / 16px = 0.75rem */
+  padding: 0.5rem 0.75rem;
   position: absolute;
   top: 0;
 }
@@ -87,9 +87,9 @@ h1, h2, h3, h6 p, ul {
 /* Styling for slideshow navigation dots */
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
+  height: 0.9375rem; /* 15px / 16px = 0.9375rem */
+  width: 0.9375rem; /* 15px / 16px = 0.9375rem */
+  margin: 0 0.125rem; /* 2px / 16px = 0.125rem */
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
@@ -123,14 +123,14 @@ h1, h2, h3, h6 p, ul {
   width: 40%;
   box-sizing: border-box;
   background-color: #f1f1f1;
-  border: 2px solid black;
-  margin: 30px; /* Adding margin for spacing */
+  border: 0.125rem solid black; /* 2px / 16px = 0.125rem */
+   margin: 1.875rem; /* Adding margin for spacing */
 }
 
 /* Styling for content description */
 .description {
-  font-size: 25px;
-  padding: 10px;
+  font-size: 1.5625rem; 
+  padding: 0.625rem;
   text-align: center;
   font-style: italic;
   flex: 1;
@@ -169,9 +169,9 @@ a:hover {
 .flex-container >div {
 
 box-sizing: border-box;
-background-image: url("imeges/children_cake/background.jpg");
-border: 2px solid black  ;
-padding: 40px;
+background-image: url("../images/background_green.jpeg");
+border: 0.125rem solid black; 
+padding: 2.5rem; 
 flex: 1;
 
 }
@@ -184,13 +184,13 @@ text-align: center;
 background-color: #74a4bb;
 border: none;
 color: rgb(53, 51, 51);
-padding: 20px;
+padding: 1.25rem;
 text-align: center;
 text-decoration: none;
 display: inline-block;
 font-size: 1vw;
-margin: 4px 2px;
-border-radius: 12px;
+margin: 0.25rem 0.125rem; 
+border-radius: 0.75rem; 
 padding: 5% 25%;
 
 }

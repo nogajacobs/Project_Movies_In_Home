@@ -6,26 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Musical</title>
     <link rel="stylesheet" href="movie_style.css">  
+    <link rel="stylesheet" href="../toolbar/navbar.css">  
     
 </head>
 <body>
 
-    <div class="navbar">
-        <a href="../home_page/index.html">HOME</a>
-        <a href="../about_us_page/about_us.html">ABOUT US</a>
-        <img src="../images/logo.jpg" alt="Logo" class="logo">
-        <a href="../contant_page/contact.html">CONTACT</a>
-        <a href="../store_page/store.html">STORE</a>
-    </div> 
+    <!-- Navigation bar -->
+    <script>
+        fetch('../Toolbar/navbar.html')
+          .then(response => response.text())
+          .then(data => {
+            document.body.insertAdjacentHTML('afterbegin', data);
+          });
+      </script>
 
    <div class="bg-top"></div>
        
       
     <div class="main">
+
+        <script>
+            function openTrailer(url) {
+                window.open(url, '_blank');
+            }
+        </script>
+
         <section class="gallery">
     <!--all the items of this page-->
         <div class="grid-container">
-            <div class="grid-item"> 
+            <div class="grid-item" > 
                 <img src="../images/funny_girl.jpg" style="width:100%">  
                 <div class="overlay">
                     <h4>Funny Girl</h4>
@@ -40,7 +49,7 @@
                     <p>44$</p>
                 </div>  
               </div>
-            <div class="grid-item"> 
+            <div class="grid-item"  onclick="openTrailer('https://www.youtube.com/watch?v=UY6uw3WpPzY&ab_channel=FoxFamilyEntertainment')"> 
                 <img src="../images/the sound of music.jpg" style="width:100%">
                 <div class="overlay">
                     <h4>The Sound of Music</h4>
