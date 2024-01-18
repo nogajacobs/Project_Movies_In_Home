@@ -10,17 +10,18 @@
     <!-- Setting the title of the page and linking the external stylesheet -->
     <title>About us</title>
     <link rel="stylesheet" href="about_us_style.css">
-      
+    <link rel="stylesheet" href="../toolbar/navbar.css">
+    
 </head>
 <body>
-    <!-- Navigation bar section -->
-    <div class="navbar">
-        <a href="../home_page/index.html">HOME</a>
-        <a href="about_us.html">ABOUT US</a>
-        <img src="../images/logo.jpg" alt="Logo" class="logo">
-        <a href="../contant_page/contact.html">CONTACT</a>
-        <a href="../store_page/store.html">STORE</a>
-    </div>
+    <!-- Navigation bar -->
+   <script>
+    fetch('../Toolbar/navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.body.insertAdjacentHTML('afterbegin', data);
+      });
+  </script>
     
     <!-- Background and main heading section -->
     <div class="bg-top1">

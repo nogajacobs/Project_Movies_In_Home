@@ -8,17 +8,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="contact.css">
-   
+    <link rel="stylesheet" href="../toolbar/navbar.css">
+    
       
 </head>
 <body>
-    <div class="navbar">
-        <a href="../home_page/index.html">HOME</a>
-        <a href="../about_us_page/about_us.html">ABOUT US</a>
-        <img src="../images/logo.jpg" alt="Logo" class="logo">
-        <a href="contact.html">CONTACT</a>
-        <a href="../store_page/store.html">STORE</a>
-    </div>
+    <!-- Navigation bar -->
+   <script>
+    fetch('../Toolbar/navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.body.insertAdjacentHTML('afterbegin', data);
+      });
+  </script>
 
     <div class="front">
 

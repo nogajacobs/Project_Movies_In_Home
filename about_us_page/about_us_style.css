@@ -58,48 +58,6 @@ body {
   box-sizing: border-box;
 }
 
-/* Styling for the navigation bar */
-.navbar {
-  position: fixed;
-  text-align: center;
-  overflow: hidden;
-  background-color: #05a079;
-  width: 100%;
-  top: 0;
-  z-index: 1;
-  height: 60px;
-  display: flex; /* Using flexbox for layout */
-  justify-content: space-around; /* Spacing out the navigation links */
-  align-items: center;
-}
-
-/* Styling for navigation links in the navbar */
-.navbar a {
-  color: #f2f2f2;
-  text-decoration: none;
-  padding: 20px; /* Adding padding for spacing */
-  margin-top: 10px; /* Adding top margin for spacing */
-}
-
-/* Hover effect for navigation links in the navbar */
-.navbar a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Styling for the active navigation link in the navbar */
-.navbar a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-
-/* Styling for the logo */
-.logo {
-  display: block;
-  width: 8%;
-  margin: 4px; /* Adding margin for spacing */
-}
-
 /* Styling for the background text */
 .background_text {
   height: 100%;
